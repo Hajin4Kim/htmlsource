@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+  </head>
+  <body>
+    <!--  
+      label for 의 값과 input id 값 일치 시, 글자를 클릭시 해당 요소 선택됨
+
+      input element
+        1) <input type="text"> : 한 줄을 입력할 수 있는 text field 생성
+        2) <input type="radio"> : 사용자의 선택을 받는 요소 (단 하나의 선택만 처리하기위한 목적으로 많이 쓰임 
+          : name을 동일하게 부여)
+        3) <input type="checkbox"> : 사용자의 선택을 받는 요소 (0 ~ 다중 선택 처리 목적 : name 을 다르게 부여)
+        4) <input type="password"> : 비밀번호와 같이 보여지면 안되는 텍스트 입력 값 처리
+        5) <input type="submit"> : form 의 action 이 지정한 곳으로 form 을 전송
+          http://192.168.0.3:5500/form/form2.html?username=홍길동&fav_lang=CSS&vehicle2=Car&password=1234
+          https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=영화
+          - 주소줄 내용량은 한정적임
+          TODO: ? 뒤로 폼 안의 작성된 값들이 따라감 : key=value & key=value & ...형태로
+            key : 폼 요소의 이름이 사용됨 (?username=)
+            value : 입력값(단, radio  checkbox의 경우 value 의 값이 따라감) (vehicle2=Car)
+        6) <input type="reset"> : form 초기화 (입력값 삭제)
+        7) <input type="button"> : 버튼 모양만 제공, 기능 없음 (javascript 와 연동해서 사용)
+    -->
+    <form action="" method="get">
+      <div>
+        <label for="name">이름</label>
+        <!--TODO: label for 와 input id 를 맞춰준다  => label 클릭을 해도 해당 요소 클릭과 동일한 기능을 함-->
+        <input type="text" name="username" id="name" />
+        <!-- <button type="submit">확인</button> -->
+      </div>
+      <div>
+        <p>좋아하는 언어 선택</p>
+        <input type="radio" name="fav_lang" id="html" value="HTML" />
+        <label for="html">HTML</label>
+        <input type="radio" name="fav_lang" id="css" value="CSS" />
+        <label for="css">CSS</label>
+        <input
+          type="radio"
+          name="fav_lang"
+          id="javascript"
+          value="JAVASCRIPT"
+        />
+        <label for="javascript">JAVASCRIPT</label>
+      </div>
+      <div>
+        <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike" />
+        <label for="vehicle1">I have a bike</label>
+        <input type="checkbox" name="vehicle2" id="vehicle2" value="Car" />
+        <label for="vehicle2">I have a car</label>
+        <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat" />
+        <label for="vehicle3">I have a boat</label>
+      </div>
+      <div>
+        <label for="password">비밀번호</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div>
+        <input type="submit" value="제출" />
+        <input type="reset" value="초기화" />
+        <input type="button" value="버튼" />
+      </div>
+    </form>
+  </body>
+</html>
