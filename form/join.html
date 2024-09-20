@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOIN page</title>
+  <style>
+    div, button{
+      margin-bottom: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <form action="" method="get">
+    <fieldset>
+      <legend>필수 사항</legend>
+      <div><label for="name">이름 </label><input type="text" name="name" id="name"></div>
+      <div><label for="email">이메일 </label><input type="email" name="email" id="email"></div>
+      <div><label for="pwd">비밀번호 </label><input type="password" name="pwd" id="pwd"></div>
+    </fieldset>
+    <fieldset>
+      <legend>부가 입력 사항</legend>
+      <div><label for="birth">생년월일 </label><input type="datetime-local" name="birth" id="birth"></div>
+      <div>
+        <label for="home">거주지를 선택해 주세요</label>
+        <select name="home" id="home">
+          <option value="seoul" selected>서울시</option>
+          <option value="anyang">안양</option>
+          <option value="busan">부산</option>
+        </select>
+      </div>
+      <div>
+        <label for="hobby">취미 </label>
+        <label for="hobby">독서 </label>
+        <input type="checkbox" name="book" id="hobby" value="book">
+        <label for="hobby">여행 </label>
+        <input type="checkbox" name="trip" id="hobby" value="trip">
+        <label for="hobby">영화감상 </label>
+        <input type="checkbox" name="movie" id="hobby" value="movie">
+      </div>
+      <div><label for="sex">성별 </label><label for="sex">남성  </label><input type="radio" name="sex" id="sex" value="male"><label for="sex">여성  </label><input type="radio" name="sex" id="sex" value="female"></div>
+      <div><label for="photo">사진을 등록해 주세요 </label><input type="file" name="photo" id="photo"></div>
+      <div><label for="reason">방문 경로를 말씀해 주세요 </label></div>
+      <div><textarea name="reason" id="" cols="30" rows="10"></textarea></div>
+    </fieldset>
+    <div></div>
+    <button type="button">회원가입</button>
+    <button type="reset">재작성</button>
+    <button type="submit">전송</button>
+
+  </form>
+</body>
+</html>

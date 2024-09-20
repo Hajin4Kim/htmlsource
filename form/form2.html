@@ -24,8 +24,25 @@
             value : 입력값(단, radio  checkbox의 경우 value 의 값이 따라감) (vehicle2=Car)
         6) <input type="reset"> : form 초기화 (입력값 삭제)
         7) <input type="button"> : 버튼 모양만 제공, 기능 없음 (javascript 와 연동해서 사용)
+        TODO: 09/20
+        8) <input type="email"> : (입력을 하면) 이메일 형식에 맞게 입력이 되었는지 확인 validation
+        9) <input type="file"> : 파일첨부 처리
+        10)  <input type="hidden"> : 사용자가 입력하는 값은 아니고, 서버단에서 특정 처리를 하기 위해 필요한 값 담는데 사용
+        11) <input type="number"> : 숫자 입력만 가능 (숫자 형식에 맞게 입력이 되었는지 확인 validation)
+
+        12) <input type="color"> : 색상 지정
+        13) <input type="date"> : 날짜(년월일) 지정
+        14) <input type="datetime-local"> : 날짜(년월일) + 시간(시,분) 지정
+        15) <input type="month"> : 년도, 월 지정
+        16) <input type="time"> : 시간(시,분) 지정
+        17) <input type="url"> : (입력을 하면) url 형식에 맞게 입력이 되었는지 간단한 유효성 검증 
+        18) <input type="search"> : 검색어를 한꺼번에 지울 수 있는 기능 제공
+        19) <input type="range"> : min.max.step 속성과 함께 사용하여 특정 범위의 값 선택
+        20) <input type="tel"> : pattern 속성과 같이 사용해서 전화번호 검증
     -->
     <form action="" method="get">
+      <!-- novalidate : 유효성 검증을 하지 않도록 한다 -->
+
       <div>
         <label for="name">이름</label>
         <!--TODO: label for 와 input id 를 맞춰준다  => label 클릭을 해도 해당 요소 클릭과 동일한 기능을 함-->
@@ -58,6 +75,75 @@
         <label for="password">비밀번호</label>
         <input type="password" name="password" id="password" />
       </div>
+      TODO: 09/20
+      <div>
+        <label for="email">이메일</label>
+        <!-- validation : 유효성 검증 -->
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="file">파일</label>
+        <input type="file" name="file" id="file" multiple />
+        <!-- multiple 속성 : 파일 여러 개 선택 가능 -->
+      </div>
+      <div>
+        <label for="hidden">hidden</label>
+        <input type="hidden" name="num" value="3487" />
+      </div>
+      <div>
+        <label for="quantity">수량</label>
+        <input
+          type="number"
+          name="quantity"
+          id="quantity"
+          min="1"
+          max="5"
+        /><!-- min="1" max="5" 속성과 함께 사용 가능 step 속성도 가능  -->
+      </div>
+      <div>
+        <label for="color">color</label>
+        <input type="color" name="color" id="color" />
+      </div>
+      <div>
+        <label for="date">date</label>
+        <input type="date" name="date" id="date" />
+        <input type="month" name="month" id="month" />
+        <input type="time" name="time" id="time" />
+      </div>
+      <div>
+        <label for="datetime">datetime</label>
+        <input type="datetime-local" name="datetime" id="datetime" />
+      </div>
+
+      <div>
+        <label for="url">url</label>
+        <input type="url" name="url" id="url" />
+      </div>
+      <div>
+        <label for="search">search</label>
+        <input type="search" name="search" id="search" />
+      </div>
+      <div>
+        <label for="range">range</label>
+        <input
+          type="range"
+          name="range"
+          id="range"
+          min="0"
+          max="50"
+          step="10"
+        /><!-- 속성 최소, 최대값 설정 및 몇 씩 증가할지 설정 가능 -->
+      </div>
+      <div>
+        <label for="tel">tel</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+        /> <!-- [0-9]{3}-[0-9]{4}-[0-9]{4} : 숫자3 - 숫자4 - 숫자4 -->
+      </div>
+
       <div>
         <input type="submit" value="제출" />
         <input type="reset" value="초기화" />
