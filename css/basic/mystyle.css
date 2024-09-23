@@ -1,0 +1,16 @@
+.ecosystem {
+  color: red;
+  font-size: 20px;
+}
+/* .area{
+  color: blue;
+}
+#text2 {
+  color: red;
+} */
+.area p{ /* 기본적으로 cascade 스타일이지만, selector 의 우선순위  */
+  color: blue;
+}
+p{
+  color: red !important;
+}

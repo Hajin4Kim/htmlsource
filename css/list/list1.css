@@ -1,0 +1,28 @@
+/* 리스트 불릿기호 삭제 */
+/* ul{
+  list-style-type: none;
+} */
+
+.a{
+  /* default */
+  list-style-type: disc;
+}
+.b{
+  list-style-type: circle;
+}
+.c{
+  list-style-type: square;
+}
+
+.d{
+  /* default */
+  list-style-type: upper-alpha;
+  list-style-position: outside;
+}
+.e{
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+.f{
+  list-style-type: upper-latin;
+}

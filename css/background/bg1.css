@@ -1,0 +1,22 @@
+/* background 
+  1) color
+  2) image
+
+*/
+
+.bg {
+  width: 300px;
+  height: 300px;
+  /* background-color: aqua; */
+  border: 1px solid red;
+}
+
+.bg {
+  /* 반복(기존 이미지가 설정한 크기보다 작은 경우, default) */
+  background-image: url(../img/bg.png);
+  /*no-repeat , repeat-x 방향으로, repeat-y 방향으로*/
+  background-repeat: no-repeat; 
+  /* 가로: left center right */
+  /* 세로 top center bottom */
+  background-position: right bottom;
+}
