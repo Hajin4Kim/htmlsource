@@ -1,0 +1,24 @@
+.parent{
+  width: 400px;
+  height: 200px;
+  border: 4px solid tomato;
+  margin: 20px;
+}
+
+
+/*  위 아래 margin 은 중복되면 겹쳐서 나타남 
+    => 요소의 margin-top 과 margin-bottom 만남 */
+.child{
+  width: 100px;
+  height: 100px;
+  border: 4px solid black;
+  margin: 10px;
+}
+
+/*  좌우 margin : 합하여 커짐*/
+.child{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .overflow{
+        /* TODO: block (default) => width: auto(100%), height: 0  
+        */
+        height: 100px;
+        background-color: silver;
+        border: 1px solid red;
+        /* overflow: 요소의 크기 이상으로 내용(자식요소)이 넘쳤을 때 처리 
+          1) visible(default) : 넘친 부분을 그대로 보여줌
+          2) auto: 넘친 부분이 있는 경우 잘라내고, 세로 스크롤바를 이용해서 볼 수 있도록 함
+          3) hidden: 넘친 부분을 잘라내고 보이지 않도록 함
+          4) scroll: 넘친 부분이 있는 경우 잘라내고, 가로와 세로 스크롤바를 이용해서 볼 수 있도록 함
+        */
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id
+      quod eius temporibus, dolorum sed consectetur! Aliquid, cumque ullam
+      provident accusantium obcaecati nobis possimus unde perferendis, iste esse
+      dolor perspiciatis nam facilis mollitia sunt, reiciendis deleniti natus
+      debitis. Architecto nemo tenetur voluptas natus animi repellendus illum
+      esse aut qui eos, fugit voluptatem similique sunt iusto inventore deserunt
+      ut velit officiis, ea repudiandae quae culpa rerum praesentium. Facilis
+      officia molestias nihil sequi beatae? Ratione in, dicta, libero nisi eum
+      et dolor placeat, architecto aperiam labore itaque harum fugiat. Vero
+      minima aperiam architecto vitae maxime, possimus dolores eius, iusto
+      quasi, dolore quidem?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id
+      quod eius temporibus, dolorum sed consectetur! Aliquid, cumque ullam
+      provident accusantium obcaecati nobis possimus unde perferendis, iste esse
+      dolor perspiciatis nam facilis mollitia sunt, reiciendis deleniti natus
+      debitis. Architecto nemo tenetur voluptas natus animi repellendus illum
+      esse aut qui eos, fugit voluptatem similique sunt iusto inventore deserunt
+      ut velit officiis, ea repudiandae quae culpa rerum praesentium. Facilis
+      officia molestias nihil sequi beatae? Ratione in, dicta, libero nisi eum
+      et dolor placeat, architecto aperiam labore itaque harum fugiat. Vero
+      minima aperiam architecto vitae maxime, possimus dolores eius, iusto
+      quasi, dolore quidem?
+    </p>
+  </body>
+</html>

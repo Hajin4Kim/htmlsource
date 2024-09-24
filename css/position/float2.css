@@ -1,0 +1,18 @@
+/* 
+  float 다음에 오는 요소에 대한 처리가 필요함
+  clear: left, clear:right, clear: both
+ */
+.child{
+  width: 150px;
+  height: 100px;
+  background-color: tomato;
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  float: left;
+}
+.box1{
+  width: 200px;
+  height: 200px;
+  background-color: bisque;
+}

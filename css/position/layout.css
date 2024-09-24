@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header: 배경색 #666, padding(안쪽여백) 30px, 글자 가운데정렬, 글자크기 35px, 글자색 흰색 */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* nav: 너비 30%, 배경색 #ccc, padding(안쪽여백) 20px, height 300px */
+nav {
+  float: left;
+  width: 30%;
+  background-color: #ccc;
+  padding: 20px;
+  height: 300px;
+}
+nav ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+/* article: 너비 70%, 배경색 #f1f1f1, padding(안쪽여백) 20px, height 300px  */
+article {
+  float: right;
+  width: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 300px;
+}
+
+/* footer: 배경색 #777, 글자 가운데정렬, 글자색 흰색,  padding(안쪽여백) 10px*/
+footer {
+  background-color: #777;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,29 @@
+/* 전체 요소의 margin, padding 0 => 0인경우 단위 생략 가능
+  portfolio width: 960px, margin: 상하100px, 좌우auto, 배경색 black, 불릿기호제거
+  li의 width와 height 225, 배경색 임의지정, 오른쪽여백 20px
+  */
+*{
+  margin: 0;
+  padding: 0;
+}
+.portfolio{
+  width: 960px;
+  margin: 100px auto;
+  background-color: black;
+  list-style: none;
+  overflow: hidden;
+}
+
+.portfolio li{
+  width: 225px;
+  height: 225px;
+  background-color: aqua;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+/* li 네번째마다 margin-right 0 설정 */
+.portfolio li:nth-child(4n){
+  margin-right: 0;
+}

@@ -8,19 +8,19 @@
 
   TODO: display: inline, block, inline-block, none, ...
 
-  화면에 요소 숨기기
+  TODO: 화면에 요소 숨기기
     1) display: none; // 그만큼의 공간조차 존재하지 않음
     2) visibility: hidden; //안보이는 요소의 공간이 존재함
   */
 div{
-  width: 100%;
+  width: 500px;
   height: 100px;
   background-color: blueviolet;
 }
 
 span{
-  width: auto; /*(inline 요소 값 지정 불가)*/
-  height: auto; /*(inline 요소 값 지정 불가)*/
+  width: 500px; /*(inline 요소 값 지정 불가)*/
+  height: 100px; /*(inline 요소 값 지정 불가)*/
   background-color: rgb(96, 173, 24);
   display: block; /* block 으로 바꿈으로써 값 지정 가능해짐*/
 }
@@ -36,6 +36,7 @@ p a{
   width: 40px; /*(inline 요소 값 지정 불가)*/
   height: 40px; /*( inline 요소 값 지정 불가)*/
   display: inline-block; /*인라인요소는 값 지정이 안되니 inline 요소와 block요소 같이 있는것 으로 탈바꿈*/
+  line-height: 40px;
 }
 
 p a:link{
@@ -43,6 +44,6 @@ p a:link{
 }
 
 .hidden{
-  /* display: none;  */
-  visibility: hidden;
+  display: none; 
+  /* visibility: hidden; */
 }
