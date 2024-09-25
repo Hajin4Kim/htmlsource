@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: "Open Sans";
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 32px auto;
+}
+
+.flexbg {
+  display: flex;
+}
+
+.flexbg .left {
+  background-color: #3498db;
+  order: 1;
+}
+
+main {
+  background-color: white;
+  width: 60%;
+  padding: 10px;
+  order: 2;
+}
+
+.flexbg .right {
+  background-color: #34495e;
+  order: 3;
+}
+
+.flexbg .sidebar {
+  width: 20%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* 너비가 줄면 두줄로 변경 => width 변경*/
+  .flexbg {
+    flex-wrap: wrap; /* 밑줄로 내려오게 */
+  }
+
+  .flexbg main {
+    order: 1;
+    width: 100%;
+  }
+  .flexbg .sidebar {
+    width: 50%;
+  }
+
+  .flexbg .left {
+    order: 2;
+  }
+  .flexbg .right {
+    order: 3;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .flexbg .sidebar {
+    width: 100%;
+  }
+}

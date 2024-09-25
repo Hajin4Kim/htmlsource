@@ -1,0 +1,44 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  background: #333338;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #444;
+}
+
+.main-content p,
+.main-content h3 {
+  margin: 15px 0;
+}
+
+.container {
+  display: flex;
+}
+
+/* main-content, sidebar 배경색 #eee, 안쪽여백6, 바깥여백10 */
+.main-content, .sidebar{
+  background-color: #eee;
+  padding: 6px;
+  margin: 10px;
+}
+
+.panel{
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+/* TODO: 2번째방법*/
+  /* display: flex;
+  flex-wrap: wrap;
+  align-content: space-between; */
+}
