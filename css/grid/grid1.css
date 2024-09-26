@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+/* float 사용 */
+/* menu {
+  float: left;
+  width: 25%;
+}
+
+main {
+  float: right;
+  width: 75%;
+} */
+
+/* flex 사용 */
+section {
+  display: flex;
+}
+
+section menu {
+  width: 25%;
+}
+
+section main {
+  width: 75%;
+}
